@@ -7,10 +7,12 @@ print("The Generated list is: %s" % str(lis_t))
 roundd = 1
 print("\n--------------------------------------------------------------\n")
 for j in range(0, len(lis_t)):
+    bubble_found = False
     count = 1
     for i in range(len(lis_t) - 1, j, -1):
         if lis_t[i] < lis_t[i - 1]:
             lis_t[i], lis_t[i - 1] = lis_t[i - 1], lis_t[i]
+            bubble_found = True
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             print("Round %s" % str(roundd))
             print("Iteration #%s" % str(count))
@@ -19,8 +21,11 @@ for j in range(0, len(lis_t)):
             print("i is %s" % str(i))
             print("j js %s" % str(j))
             count += 1
+    if not bubble_found:
+        break
         i -= 1
     roundd += 1
     if j > i:
         break
     print("\n*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*\n")
+print("The final sorted list is %s" % str(lis_t))
