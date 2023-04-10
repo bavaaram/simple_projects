@@ -12,13 +12,13 @@ for j in range(0, len(lis_t)):
         print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         if lis_t[i] < lis_t[i - 1]:
             lis_t[i], lis_t[i - 1] = lis_t[i - 1], lis_t[i]
-        print("Round %s" % str(roundd))
-        print("Iteration #%s" % str(count))
-        print(lis_t)
-        print("+_+_+_+_+_")
-        print("i is %s" % str(i))
-        print("j js %s" % str(j))
-        count += 1
+            print("Round %s" % str(roundd))
+            print("Iteration #%s" % str(count))
+            print(lis_t)
+            print("+_+_+_+_+_")
+            print("i is %s" % str(i))
+            print("j js %s" % str(j))
+            count += 1
         i -= 1
     roundd += 1
     if j > i:
