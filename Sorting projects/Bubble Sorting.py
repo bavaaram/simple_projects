@@ -1,5 +1,9 @@
-lis_t = [43, 6, 2, 72, 25, 23, 1, 4, 17, 15, 50, 13, 12, 20, 5]
-print(lis_t)
+from random import randint
+n = input("How many numbers in list? ")
+lis_t = list()
+for k in range(int(n)):
+    lis_t.append(randint(-100, 100))
+print("The Generated list is: %s" % str(lis_t))
 roundd = 1
 print("\n--------------------------------------------------------------\n")
 for j in range(0, len(lis_t)):
@@ -16,5 +20,7 @@ for j in range(0, len(lis_t)):
         print("j js %s" % str(j))
         count += 1
         i -= 1
-    print("\n*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*\n")
     roundd += 1
+    if j > i:
+        break
+    print("\n*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*\n")
