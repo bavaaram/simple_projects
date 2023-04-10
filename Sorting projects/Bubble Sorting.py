@@ -9,9 +9,9 @@ print("\n--------------------------------------------------------------\n")
 for j in range(0, len(lis_t)):
     count = 1
     for i in range(len(lis_t) - 1, j, -1):
-        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         if lis_t[i] < lis_t[i - 1]:
             lis_t[i], lis_t[i - 1] = lis_t[i - 1], lis_t[i]
+            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             print("Round %s" % str(roundd))
             print("Iteration #%s" % str(count))
             print(lis_t)
